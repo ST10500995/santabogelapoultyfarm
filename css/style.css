@@ -14,9 +14,6 @@ body{
     line-height: 1.6;
 }
 
-/* =========================
-   HEADER
-========================= */
 
 header{
     background-color: #1d3557;
@@ -35,9 +32,7 @@ header{
     font-size: 1rem;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
+
 
 nav ul{
     list-style: none;
@@ -71,9 +66,7 @@ nav ul li a:hover{
     background-color: #457b9d;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+
 
 .hero{
     background-image:
@@ -105,9 +98,7 @@ nav ul li a:hover{
     margin-bottom: 25px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+
 
 .btn{
     background-color: #ffdd57;
@@ -125,9 +116,7 @@ nav ul li a:hover{
     color: white;
 }
 
-/* =========================
-   MAIN CONTAINER
-========================= */
+
 
 .container{
     width: 90%;
@@ -136,9 +125,7 @@ nav ul li a:hover{
     padding: 30px 0;
 }
 
-/* =========================
-   CARD SECTIONS
-========================= */
+
 
 .card{
     background-color: white;
@@ -162,9 +149,7 @@ nav ul li a:hover{
     margin-bottom: 15px;
 }
 
-/* =========================
-   LISTS
-========================= */
+
 
 .card ul{
     padding-left: 20px;
@@ -174,9 +159,7 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-/* =========================
-   GALLERY
-========================= */
+
 
 .gallery{
     margin: 40px 0;
@@ -212,9 +195,6 @@ nav ul li a:hover{
     transform: scale(1.03);
 }
 
-/* =========================
-   PRODUCTS GRID
-========================= */
 
 .products-grid{
     display: grid;
@@ -259,9 +239,7 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-/* =========================
-   INFO BOXES
-========================= */
+
 
 .info-boxes{
     display: grid;
@@ -287,9 +265,7 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-/* =========================
-   CONTACT GRID
-========================= */
+
 
 .contact-grid{
     display: grid;
@@ -335,9 +311,7 @@ blockquote{
     font-style: italic;
 }
 
-/* =========================
-   TEAM IMAGE
-========================= */
+
 
 .about-image{
     width: 100%;

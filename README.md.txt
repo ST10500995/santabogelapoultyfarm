@@ -52,6 +52,7 @@ Media queries were used to adjust layouts for different screen sizes.
 - Fixed mobile display issues
 - Updated navigation menu
 -improved font sizes and type
+-contacts click button
 
 ---
 
