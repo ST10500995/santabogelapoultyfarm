@@ -1,4 +1,4 @@
-# Web Design Project – Part 2 Santabogela poultry
+﻿# Web Design Project – Part 2 Santabogela poultry
 
 ## Student Information
 Name: Your Name  
@@ -53,6 +53,7 @@ Media queries were used to adjust layouts for different screen sizes.
 - Updated navigation menu
 -improved font sizes and type
 -contacts click button
+-added more photos
 
 ---
 
