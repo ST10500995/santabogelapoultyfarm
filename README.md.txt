@@ -61,7 +61,7 @@ Media queries were used to adjust layouts for different screen sizes.
 - https://www.w3schools.com
 - https://developer.mozilla.org
 - https://css-tricks.com
--https://html5doctor.com/html-5-reset-stylesheet/
+- https://html5doctor.com/html-5-reset-stylesheet/
 
 ---
 
