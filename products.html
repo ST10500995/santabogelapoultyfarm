@@ -1,243 +1,161 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="View Santabogela Poultry Farm egg products, including table eggs, brown eggs, organic eggs, and free-range eggs.">
+    <meta name="keywords" content="table eggs, brown eggs, organic eggs, free-range eggs, egg supplier Pretoria, egg delivery Gauteng">
+    <meta name="author" content="Kgopotse Mashile">
     <title>Our Products | Santabogela Poultry Farm</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- HEADER -->
+    <!-- Header section -->
     <header>
-
         <div class="logo">
-
             <h1>Santabogela Poultry Farm</h1>
-
-            <p>Fresh Farm Eggs Every Day</p>
-
+            <p>Farm Fresh Quality Eggs</p>
         </div>
 
-        <!-- NAVIGATION -->
-        <nav>
-
-            <ul>
-
+        <!-- Navigation menu -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+            Menu
+        </button>
+        <nav aria-label="Primary navigation">
+            <ul id="main-navigation">
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="about.html">About Us</a></li>
-
-                <li><a href="ourproducts.html" class="active">Our Products</a></li>
-
-                <li><a href="ourteam.html">Our Team</a></li>
-
+                <li><a href="products.html" class="active">Our Products</a></li>
+                <li><a href="team.html">Our Team</a></li>
                 <li><a href="eggfunfacts.html">Egg Fun Facts</a></li>
-
-                <li><a href="contacts.html">Contacts</a></li>
-
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- Hero banner -->
     <section class="hero">
-
         <div class="hero-text">
-
             <h2>Our Premium Egg Products</h2>
-
             <p>
                 Fresh, nutritious, and hygienically packaged eggs
                 for homes, restaurants, bakeries, and businesses.
             </p>
-
         </div>
-
     </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <!-- Main content -->
+    <main id="main-content" class="container">
 
-        <!-- INTRODUCTION -->
+        <!-- Introduction -->
         <section class="card">
-
             <h2>Quality Products You Can Trust</h2>
-
             <p>
                 At Santabogela Poultry Farm, we are committed to providing
                 high-quality egg products sourced from healthy and well-cared-for hens.
             </p>
-
             <p>
                 Our eggs are carefully inspected and packaged under strict
                 hygiene standards to ensure freshness and customer satisfaction.
             </p>
-
         </section>
 
-        <!-- PRODUCTS GRID -->
+        <!-- Product grid -->
         <section class="products-grid">
 
-            <!-- PRODUCT 1 -->
             <div class="product-card">
-
-                <img src="images/product1.jpg" alt="Table Eggs">
-
+                <img src="images/product1.jpg" alt="Table eggs in packaging" loading="lazy">
                 <h3>Table Eggs</h3>
-
                 <p>
                     Fresh eggs collected daily and packed under hygienic conditions.
                 </p>
-
+                <a href="contact.html#enquiry-form" class="btn" data-product="Table Eggs">Enquire</a>
             </div>
 
-            <!-- PRODUCT 2 -->
             <div class="product-card">
-
-                <img src="images/table.avif" alt="Brown Eggs">
-                
-
+                <img src="images/table.avif" alt="Brown eggs" loading="lazy">
                 <h3>Brown Eggs</h3>
-
                 <p>
                     Rich in flavour and nutrients, perfect for healthy lifestyles.
                 </p>
-
+                <a href="contact.html#enquiry-form" class="btn" data-product="Brown Eggs">Enquire</a>
             </div>
 
-            <!-- PRODUCT 3 -->
             <div class="product-card">
-
-                <img src="images/organic.avif" alt="Organic Eggs">
-
+                <img src="images/organic.avif" alt="Organic eggs" loading="lazy">
                 <h3>Organic Eggs</h3>
-
                 <p>
                     Produced from hens fed natural organic diets without harmful additives.
                 </p>
-
+                <a href="contact.html#enquiry-form" class="btn" data-product="Organic Eggs">Enquire</a>
             </div>
 
-            <!-- PRODUCT 4 -->
             <div class="product-card">
-
-                <img src="images/freerange.jpg" alt="Free Range Eggs">
-
+                <img src="images/layerfreerange4.jpg" alt="Free-range eggs" loading="lazy">
                 <h3>Free-Range Eggs</h3>
-
                 <p>
                     Eggs from hens with outdoor access for ethical and healthy production.
                 </p>
-
+                <a href="contact.html#enquiry-form" class="btn" data-product="Free-Range Eggs">Enquire</a>
             </div>
 
         </section>
 
-        <!-- SERVICES -->
+        <!-- Packaging and delivery -->
         <section class="card">
-
             <h2>Packaging and Delivery</h2>
-
             <ul>
-
                 <li>Bulk and retail packaging options available</li>
-
                 <li>Custom packaging upon request</li>
-
                 <li>Reliable and timely delivery services</li>
-
                 <li>Products supplied to homes, bakeries, hotels, and restaurants</li>
-
             </ul>
-
         </section>
 
-        <!-- QUALITY -->
+        <!-- Quality assurance -->
         <section class="card">
-
             <h2>Guaranteed Quality and Safety</h2>
-
             <ul>
-
                 <li>Strict hygiene and quality control procedures</li>
-
                 <li>Regular veterinary health checks</li>
-
                 <li>Fresh products supplied daily</li>
-
                 <li>Safe and professional handling practices</li>
-
             </ul>
-
         </section>
 
-        <!-- CONTACT -->
-        <section class="card contact-card">
-
+        <!-- Order call to action -->
+        <section class="card contact-message">
             <h2>Place Your Order Today</h2>
-
             <p>
                 Contact Santabogela Poultry Farm for fresh egg orders,
                 pricing information, and delivery enquiries.
             </p>
-
-            <a href="contacts.html" class="btn">
-                Contact Us
-            </a>
-
+            <a href="contact.html" class="btn">Contact Us</a>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
-        <p>
-            Author: Kgopotso Mashile
-        </p>
-
-        <p>
-            &copy; 2026 Santabogela Poultry Farm.
-            All Rights Reserved.
-        </p>
-
+        <p>Author: Kgopotse Mashile</p>
+        <p>&copy; 2026 Santabogela Poultry Farm. All Rights Reserved.</p>
         <p>
             Email:
-            <a href="mailto:ST10500995@rcconnect.edu.za">
-                ST10500995@rcconnect.edu.za
-            </a>
+            <a href="mailto:ST10500995@rcconnect.edu.za">ST10500995@rcconnect.edu.za</a>
         </p>
-
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>
-
-
-         
-         
-
-         
-
-
-
-         

@@ -1,196 +1,153 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Explore fun and educational facts about eggs and chickens from Santabogela Poultry Farm.">
+    <meta name="keywords" content="egg facts, chicken facts, egg education, Santabogela Poultry Farm">
+    <meta name="author" content="Kgopotse Mashile">
     <title>Egg Fun Facts | Santabogela Poultry Farm</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-
-
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-
-    
-
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- HEADER -->
+    <!-- Header section -->
     <header>
-
         <div class="logo">
-
             <h1>Santabogela Poultry Farm</h1>
-
             <p>Fresh Farm Eggs Every Day</p>
-
         </div>
 
-        <!-- NAVIGATION -->
-        <nav>
-
-            <ul>
-
+        <!-- Navigation menu -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+            Menu
+        </button>
+        <nav aria-label="Primary navigation">
+            <ul id="main-navigation">
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="about.html">About Us</a></li>
-
-                <li><a href="ourproducts.html">Our Products</a></li>
-
-                <li><a href="ourteam.html">Our Team</a></li>
-
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="team.html">Our Team</a></li>
                 <li><a href="eggfunfacts.html" class="active">Egg Fun Facts</a></li>
-
-                <li><a href="contacts.html">Contact Us</a></li>
-
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- Hero banner -->
     <section class="hero">
-
         <div class="hero-text">
-
             <h2>Egg Fun Facts</h2>
-
             <p>
                 Learn interesting and fun facts about eggs and chickens
-                while enjoying some egg-cellent humour!
+                while enjoying some egg-cellent humour.
             </p>
-
         </div>
-
     </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <!-- Main content -->
+    <main id="main-content" class="container">
 
-        <!-- FUN FACTS -->
+        <!-- Fun facts list -->
         <section class="card">
-
             <h2>Interesting Egg Facts</h2>
-
             <ul class="fun-facts-list">
-
                 <li>
                     Why did the egg get thrown out of class?
                     Because it kept cracking jokes!
                 </li>
-
                 <li>
                     Chickens sometimes lay eggs with double yolks —
-                    it’s like finding a twin surprise inside!
+                    it is like finding a twin surprise inside.
                 </li>
-
                 <li>
                     An egg shell can have up to 17,000 tiny pores.
                 </li>
-
                 <li>
                     The oldest recorded egg-laying chicken lived
                     to be 16 years old.
                 </li>
-
                 <li>
                     Some hens lay eggs too large for standard cartons.
                 </li>
-
                 <li>
                     In some countries, people enjoy egg-rolling contests.
                 </li>
-
                 <li>
                     Hummingbirds lay the smallest eggs while ostriches
                     lay the largest eggs.
                 </li>
-
                 <li>
                     The world record for balancing eggs on end is 888 eggs.
                 </li>
-
                 <li>
                     Why did the egg sit on the computer?
                     To hatch a new idea!
                 </li>
-
             </ul>
-
         </section>
 
-        <!-- FUN SECTION -->
+        <!-- Interactive questions -->
+        <section class="card">
+            <h2>Quick Egg Questions</h2>
+            <div class="accordion">
+                <button class="accordion-button" type="button" aria-expanded="false" aria-controls="fact-panel-one">
+                    What makes eggs strong?
+                </button>
+                <div id="fact-panel-one" class="accordion-panel" hidden>
+                    <p>Egg shells are strong because of their curved shape and calcium carbonate structure.</p>
+                </div>
+
+                <button class="accordion-button" type="button" aria-expanded="false" aria-controls="fact-panel-two">
+                    Why are eggs checked before packaging?
+                </button>
+                <div id="fact-panel-two" class="accordion-panel" hidden>
+                    <p>Checking helps remove cracked eggs and keeps only clean, fresh eggs ready for customers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun message -->
         <section class="card fun-message">
-
             <h2>Time Flies When You Are Having Fun</h2>
-
             <p>
                 Eggs are not only nutritious but also full of interesting
                 stories and fun facts that bring smiles to people everywhere.
             </p>
-
         </section>
 
-        <!-- IMAGE GALLERY -->
+        <!-- Fun gallery -->
         <section class="gallery">
-
             <h2>Fun Gallery</h2>
-
             <div class="gallery-grid">
-
-                <img src="images/funy2.jpg"
-                     alt="Funny Egg Image">
-
-                <img src="images/fun facts.jpg"
-                     alt="Egg Fun Facts">
-
-                <img src="images/funy1.jpg"
-                     alt="Funny Chicken Image">
-
+                <img src="images/funy2.jpg" alt="Funny egg illustration" loading="lazy">
+                <img src="images/fun facts.jpg" alt="Egg fun facts graphic" loading="lazy">
+                <img src="images/funy1.jpg" alt="Funny chicken illustration" loading="lazy">
             </div>
-
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
-        <p>
-            Author: Kgopotso Mashile
-        </p>
-
-        <p>
-            &copy; 2026 Santabogela Poultry Farm.
-            All Rights Reserved.
-        </p>
-
+        <p>Author: Kgopotse Mashile</p>
+        <p>&copy; 2026 Santabogela Poultry Farm. All Rights Reserved.</p>
         <p>
             Email:
-            <a href="mailto:ST10500995@rcconnect.edu.za">
-                ST10500995@rcconnect.edu.za
-            </a>
+            <a href="mailto:ST10500995@rcconnect.edu.za">ST10500995@rcconnect.edu.za</a>
         </p>
-
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>
-
-      
-             
