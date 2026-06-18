@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send a product enquiry to Santabogela Poultry Farm for table eggs, brown eggs, organic eggs, free-range eggs, and bulk orders.">
+    <meta name="keywords" content="Santabogela Poultry Farm enquiry, egg enquiry, bulk egg orders, table eggs, free-range eggs">
+    <meta name="author" content="Kgopotse Mashile">
+    <title>Product Enquiry | Santabogela Poultry Farm</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <h1>Santabogela Poultry Farm</h1>
+            <p>Fresh Farm Eggs Every Day</p>
+        </div>
+
+        <!-- Navigation menu -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+            Menu
+        </button>
+        <nav aria-label="Primary navigation">
+            <ul id="main-navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="eggfunfacts.html">Egg Fun Facts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Product Enquiry</h2>
+            <p>
+                Ask about egg availability, bulk orders, delivery areas,
+                and product options.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main id="main-content" class="container">
+
+        <section class="card">
+            <h2>How We Can Help</h2>
+            <p>
+                Use this enquiry form for product-related questions such as
+                egg type, quantity, delivery, packaging, or order availability.
+            </p>
+        </section>
+
+        <!-- Enquiry form -->
+        <section class="card enquiry-card">
+            <h2>Send Product Enquiry</h2>
+            <form id="enquiry-form" class="enquiry-form validated-form" action="#form-status" data-form-type="enquiry" novalidate>
+                <div class="form-row">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <span id="name-error" class="field-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <span id="email-error" class="field-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required aria-describedby="phone-error">
+                    <span id="phone-error" class="field-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="product">Product Interest</label>
+                    <select id="product" name="product" required aria-describedby="product-error">
+                        <option value="">Select a product</option>
+                        <option value="Table Eggs">Table Eggs</option>
+                        <option value="Brown Eggs">Brown Eggs</option>
+                        <option value="Organic Eggs">Organic Eggs</option>
+                        <option value="Free-Range Eggs">Free-Range Eggs</option>
+                        <option value="Bulk Order">Bulk Order</option>
+                    </select>
+                    <span id="product-error" class="field-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="quantity">Estimated Quantity</label>
+                    <select id="quantity" name="quantity" required aria-describedby="quantity-error">
+                        <option value="">Select quantity</option>
+                        <option value="1 tray">1 tray</option>
+                        <option value="2-5 trays">2-5 trays</option>
+                        <option value="6-20 trays">6-20 trays</option>
+                        <option value="Bulk / business order">Bulk / business order</option>
+                    </select>
+                    <span id="quantity-error" class="field-error"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Enquiry Details</label>
+                    <textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="field-error"></span>
+                </div>
+
+                <button type="submit" class="btn">Check Availability</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="card contact-message">
+            <h2>Need a Faster Response?</h2>
+            <p>Call our sales team directly for urgent orders or same-day availability.</p>
+            <a href="tel:0768610286" class="btn">Call Sales</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Author: Kgopotse Mashile</p>
+        <p>&copy; 2026 Santabogela Poultry Farm. All Rights Reserved.</p>
+        <p>
+            Email:
+            <a href="mailto:ST10500995@rcconnect.edu.za">ST10500995@rcconnect.edu.za</a>
+        </p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

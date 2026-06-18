@@ -300,6 +300,28 @@ nav ul li a:active {
     margin-bottom: 1.25rem;
 }
 
+.product-filter-card {
+    max-width: 58rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.filter-status {
+    color: #1d3557;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.product-card.is-hidden {
+    display: none;
+}
+
 /* Forms */
 .enquiry-card {
     max-width: 48rem;
@@ -824,6 +846,10 @@ footer a:focus {
     .products-grid,
     .gallery-grid,
     .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-controls {
         grid-template-columns: 1fr;
     }
 

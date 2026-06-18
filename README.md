@@ -236,6 +236,7 @@ For detailed version history and all changes, see [CHANGELOG.md](CHANGELOG.md).
 - **v2.0:** Added JavaScript foundation, contact form validation, product enquiry selection, and mobile navigation toggle
 - **v2.1:** Added gallery lightbox, accordion content, scroll animations, and Google Maps embed
 - **v2.2:** Added SEO metadata, lazy loading, sitemap, robots file, accessibility improvements, and custom 404 page
+- **v2.3:** Added separate enquiry page, general contact email form, and JavaScript product search/filter for Part 3 functionality
 
 ## Responsiveness Testing and Iteration Across Devices
 

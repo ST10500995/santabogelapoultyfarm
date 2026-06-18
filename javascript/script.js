@@ -86,9 +86,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    const form = document.querySelector("#enquiry-form");
-    if (form) {
-        const status = document.querySelector("#form-status");
+    document.querySelectorAll(".validated-form").forEach(function (form) {
+        const status = form.querySelector(".form-status");
 
         form.addEventListener("submit", function (event) {
             event.preventDefault();
@@ -97,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
             form.querySelectorAll("[required]").forEach(function (field) {
                 const error = document.querySelector("#" + field.id + "-error");
                 const isEmail = field.type === "email";
-                const isPhone = field.id === "phone";
+                const isPhone = field.type === "tel";
                 let message = "";
 
                 if (!field.value.trim()) {
@@ -124,15 +123,80 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
 
-            if (valid) {
-                status.textContent = "Thank you. Your enquiry has been checked and is ready to send.";
-                status.className = "form-status success";
-                form.reset();
-            } else {
+            if (!status) {
+                return;
+            }
+
+            if (!valid) {
                 status.textContent = "Please fix the highlighted fields before sending.";
                 status.className = "form-status error";
+                return;
+            }
+
+            if (form.dataset.formType === "contact") {
+                const name = form.querySelector("[name='name']").value.trim();
+                const email = form.querySelector("[name='email']").value.trim();
+                const phone = form.querySelector("[name='phone']").value.trim();
+                const messageType = form.querySelector("[name='messageType']").value;
+                const message = form.querySelector("[name='message']").value.trim();
+                const subject = encodeURIComponent("Santabogela Poultry Farm - " + messageType);
+                const body = encodeURIComponent(
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Phone: " + phone + "\n" +
+                    "Message type: " + messageType + "\n\n" +
+                    "Message:\n" + message
+                );
+
+                status.innerHTML = 'Your message is ready. <a href="mailto:ST10500995@rcconnect.edu.za?subject=' + subject + '&body=' + body + '">Open email to send</a>.';
+                status.className = "form-status success";
+                return;
+            }
+
+            const product = form.querySelector("[name='product']").value;
+            const quantityField = form.querySelector("[name='quantity']");
+            const quantity = quantityField ? quantityField.value : "your selected quantity";
+            status.textContent = product + " are currently available for " + quantity + ". Our team will confirm pricing and delivery details after reviewing your enquiry.";
+            status.className = "form-status success";
+            form.reset();
+        });
+    });
+
+    const productSearch = document.querySelector("#product-search");
+    const productFilter = document.querySelector("#product-filter");
+    const productResults = document.querySelector("#product-results");
+    const productCards = document.querySelectorAll(".products-grid .product-card");
+
+    function updateProductFilter() {
+        if (!productSearch || !productFilter || !productResults) {
+            return;
+        }
+
+        const searchValue = productSearch.value.trim().toLowerCase();
+        const filterValue = productFilter.value;
+        let visibleCount = 0;
+
+        productCards.forEach(function (card) {
+            const categoryMatches = filterValue === "all" || card.dataset.category === filterValue;
+            const searchText = (card.textContent + " " + (card.dataset.search || "")).toLowerCase();
+            const searchMatches = !searchValue || searchText.includes(searchValue);
+            const isVisible = categoryMatches && searchMatches;
+
+            card.classList.toggle("is-hidden", !isVisible);
+            if (isVisible) {
+                visibleCount += 1;
             }
         });
+
+        productResults.textContent = visibleCount === 1
+            ? "Showing 1 matching product."
+            : "Showing " + visibleCount + " matching products.";
+    }
+
+    if (productSearch && productFilter && productCards.length > 0) {
+        productSearch.addEventListener("input", updateProductFilter);
+        productFilter.addEventListener("change", updateProductFilter);
+        updateProductFilter();
     }
 
     document.querySelectorAll(".fun-facts-list li").forEach(function (factItem) {

@@ -37,6 +37,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html" class="active">Our Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="eggfunfacts.html">Egg Fun Facts</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -71,43 +72,66 @@
             </p>
         </section>
 
+        <!-- Product search and filter -->
+        <section class="card product-filter-card">
+            <h2>Find the Right Eggs</h2>
+            <div class="filter-controls">
+                <div class="form-row">
+                    <label for="product-search">Search Products</label>
+                    <input type="search" id="product-search" placeholder="Search table, brown, organic, or free-range eggs">
+                </div>
+
+                <div class="form-row">
+                    <label for="product-filter">Product Type</label>
+                    <select id="product-filter">
+                        <option value="all">All products</option>
+                        <option value="table">Table Eggs</option>
+                        <option value="brown">Brown Eggs</option>
+                        <option value="organic">Organic Eggs</option>
+                        <option value="free-range">Free-Range Eggs</option>
+                    </select>
+                </div>
+            </div>
+            <p id="product-results" class="filter-status" aria-live="polite">Showing all products.</p>
+        </section>
+
         <!-- Product grid -->
         <section class="products-grid">
 
-            <div class="product-card">
+            <div class="product-card" data-category="table" data-search="table eggs fresh daily hygienic packaging retail bulk">
                 <img src="images/product1.jpg" alt="Table eggs in packaging" loading="lazy">
                 <h3>Table Eggs</h3>
                 <p>
                     Fresh eggs collected daily and packed under hygienic conditions.
                 </p>
-                <a href="contact.html#enquiry-form" class="btn" data-product="Table Eggs">Enquire</a>
+                <a href="enquiry.html#enquiry-form" class="btn" data-product="Table Eggs">Enquire</a>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="brown" data-search="brown eggs rich flavour nutrients healthy lifestyle">
                 <img src="images/table.avif" alt="Brown eggs" loading="lazy">
                 <h3>Brown Eggs</h3>
                 <p>
                     Rich in flavour and nutrients, perfect for healthy lifestyles.
                 </p>
-                <a href="contact.html#enquiry-form" class="btn" data-product="Brown Eggs">Enquire</a>
+                <a href="enquiry.html#enquiry-form" class="btn" data-product="Brown Eggs">Enquire</a>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="organic" data-search="organic eggs natural diet additives healthy">
                 <img src="images/organic.avif" alt="Organic eggs" loading="lazy">
                 <h3>Organic Eggs</h3>
                 <p>
                     Produced from hens fed natural organic diets without harmful additives.
                 </p>
-                <a href="contact.html#enquiry-form" class="btn" data-product="Organic Eggs">Enquire</a>
+                <a href="enquiry.html#enquiry-form" class="btn" data-product="Organic Eggs">Enquire</a>
             </div>
 
-            <div class="product-card">
+            <div class="product-card" data-category="free-range" data-search="free-range eggs outdoor access ethical healthy production">
                 <img src="images/layerfreerange4.jpg" alt="Free-range eggs" loading="lazy">
                 <h3>Free-Range Eggs</h3>
                 <p>
                     Eggs from hens with outdoor access for ethical and healthy production.
                 </p>
-                <a href="contact.html#enquiry-form" class="btn" data-product="Free-Range Eggs">Enquire</a>
+                <a href="enquiry.html#enquiry-form" class="btn" data-product="Free-Range Eggs">Enquire</a>
             </div>
 
         </section>
@@ -141,7 +165,7 @@
                 Contact Santabogela Poultry Farm for fresh egg orders,
                 pricing information, and delivery enquiries.
             </p>
-            <a href="contact.html" class="btn">Contact Us</a>
+            <a href="enquiry.html" class="btn">Send Enquiry</a>
         </section>
 
     </main>

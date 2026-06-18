@@ -112,3 +112,10 @@ All notable changes to the Santabogela Poultry Farm website project are document
 - Added `robots.txt` and `sitemap.xml` to support search engine crawling
 - Created a custom `404.html` page for deployment platforms such as GitHub Pages or Netlify
 - Updated CSS to support the new form, accordion, map embed, lightbox, mobile menu, and animation states
+
+### v2.3 - Part 3 Form and Dynamic Content Improvements
+- Added a separate `enquiry.html` page for product and bulk order enquiries
+- Updated `contact.html` to use a general message form with email preparation
+- Added JavaScript validation and user feedback for both enquiry and contact forms
+- Added product search and category filtering on `products.html`
+- Added `enquiry.html` to the navigation menu and sitemap
