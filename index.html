@@ -1,105 +1,96 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ZA">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santabogela Poultry Farm supplies fresh table, brown, organic, and free-range eggs to families and businesses in Gauteng and Mpumalanga.">
+    <meta name="keywords" content="Santabogela Poultry Farm, fresh eggs, free-range eggs, organic eggs, Winterveld, Pretoria, Soshanguve">
+    <meta name="author" content="Kgopotse Mashile">
     <title>Santabogela Poultry Farm</title>
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+ 
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- HEADER -->
+    <!-- Header section -->
     <header>
         <div class="logo">
             <h1>Santabogela Poultry Farm</h1>
             <p>Fresh Farm Eggs Every Day</p>
         </div>
 
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <!-- Navigation menu -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+            Menu
+        </button>
+        <nav aria-label="Primary navigation">
+            <ul id="main-navigation">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="ourproducts.html">Our Products</a></li>
-                <li><a href="ourteam.html">Our Team</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="team.html">Our Team</a></li>
                 <li><a href="eggfunfacts.html">Egg Fun Facts</a></li>
-                <li><a href="contacts.html">Contact Us</a></li>
-            
-
-            
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- Hero banner -->
     <section class="hero">
-
         <div class="hero-text">
             <h2>Welcome to Santabogela Poultry Farm</h2>
-
             <p>
-                We specialize in producing fresh, healthy, and high-quality eggs
+                We specialise in producing fresh, healthy, and high-quality eggs
                 for families, restaurants, and local businesses.
             </p>
-
-            <a href="ourproducts.html" class="btn">
-                View Products
-            </a>
+            <a href="products.html" class="btn">View Products</a>
         </div>
-
     </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <!-- Main content -->
+    <main id="main-content" class="container">
 
-        <!-- ABOUT SECTION -->
+        <!-- About preview -->
         <section class="card">
-
             <h2>About Our Farm</h2>
-
             <p>
                 Santabogela Poultry Farm has proudly served customers with
                 farm-fresh eggs for over five years. Our chickens are cared
                 for in a healthy environment to ensure quality egg production.
             </p>
-
             <p>
                 Every egg is carefully handpicked and packaged by our experienced
                 workers to guarantee freshness and customer satisfaction.
             </p>
-
         </section>
 
-        <!-- IMAGE GALLERY -->
+        <!-- Farm gallery -->
         <section class="gallery">
-
             <h2>Farm Gallery</h2>
-
             <div class="gallery-grid">
-
-                <img src="images/chicken3.jpg" alt="Chicken Farm" width="700">
-                <img src="images/chicken4.jpg" alt="Fresh Eggs" width="750">
-                <img src="images/layerfreerange5.jpg" alt="Free Range Chicken">
-                <img src="images/freerange3.jpg">
-                <img src="images/breakfast.jpg" alt="Breakfast Meal">
-                <img src="images/burger.jpg" alt="Burger Meal">
-                <img src="images/breakfast2.jpg">
-                <img src="images/breakfast3.jpg">
-
+                <img src="images/chicken3.jpg" alt="Chickens on the farm" loading="lazy">
+                <img src="images/chicken4.jpg" alt="Fresh eggs from the farm" loading="lazy">
+                <img src="images/layerfreerange5.jpg" alt="Free-range layer hens" loading="lazy">
+                <img src="images/freerange3.jpg" alt="Free-range poultry farming" loading="lazy">
+                <img src="images/breakfast.jpg" alt="Breakfast made with fresh eggs" loading="lazy">
+                <img src="images/burger.jpg" alt="Meal prepared with farm eggs" loading="lazy">
+                <img src="images/breakfast2.jpg" alt="Egg breakfast dish" loading="lazy">
+                <img src="images/breakfast3.jpg" alt="Healthy egg breakfast" loading="lazy">
             </div>
-
         </section>
 
-        <!-- WHY CHOOSE US -->
+        <!-- Why choose us -->
         <section class="card">
-
             <h2>Why Choose Us?</h2>
-
             <ul>
                 <li>Fresh eggs delivered daily</li>
                 <li>Affordable prices</li>
@@ -107,108 +98,51 @@
                 <li>Trusted by local customers</li>
                 <li>Quality packaging and hygiene standards</li>
             </ul>
-
         </section>
 
-        <!-- CUSTOMER REVIEW SECTION -->
+        <!-- Customer reviews -->
         <section class="card">
-
             <h2>Customer Reviews</h2>
-
             <blockquote>
-                “The eggs are always fresh and delicious. Excellent service!”
+                "The eggs are always fresh and delicious. Excellent service!"
                 – Local Customer
             </blockquote>
-
             <blockquote>
-                “Best poultry farm in the area. Highly recommended.”
+                "Best poultry farm in the area. Highly recommended."
                 – Restaurant Owner
             </blockquote>
-
+            <blockquote>
+                "When they say farm fresh eggs, they really mean just that."
+                – Local Customer
+            </blockquote>
+            <blockquote>
+                "I am always happy with their eggs. Kea leboga Santabogela Poultry — your eggs are delicious."
+                – Happy Customer
+            </blockquote>
         </section>
 
-        <!-- CONTACT PREVIEW -->
+        <!-- Contact preview -->
         <section class="card">
-
             <h2>Contact Us</h2>
-
             <p>
                 Want to place an order or learn more about our products?
                 Visit our Contact Us page for more details.
             </p>
-
-            <a href="contacts.html" class="btn">
-                Contact Us
-            </a>
-
+            <a href="contact.html" class="btn">Contact Us</a>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
-        <p>
-            Author: Kgopotso Mashile
-        </p>
-
-        <p>
-            &copy; 2026 Santabogela Poultry Farm.
-            All Rights Reserved.
-        </p>
-
+        <p>Author: Kgopotse Mashile</p>
+        <p>&copy; 2026 Santabogela Poultry Farm. All Rights Reserved.</p>
         <p>
             Email:
-            <a href="mailto:ST10500995@rcconnect.edu.za">
-                ST10500995@rcconnect.edu.za
-            </a>
+            <a href="mailto:ST10500995@rcconnect.edu.za">ST10500995@rcconnect.edu.za</a>
         </p>
-
     </footer>
 
+    <script src="javascript/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-        
-     
-
-
- 
-            
-
-          
-        
-        
-         
-    
-
-
-
-
-       
-       
-       
-    
-    
-
-
-
-
-      
-        
-
-       
-
-
-    
-
-    
-
-    
-    
