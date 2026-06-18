@@ -1,4 +1,4 @@
-
+﻿
 # Santabogela Poultry Farm Website
 By ST10500995
 
@@ -58,7 +58,7 @@ The website comprises six main sections, each serving specific user needs:
 
 **About Us (`about.html`):** Tells the farm's story, including its establishment in 2021, the inspiration behind the name Santabogela, the legacy of Santabogela Carpos Mashile, the farm's location in Winterveld within the City of Tshwane Metropolitan Municipality, mission statement, and core values.
 
-**Our Products (`products.html`):** Provides comprehensive product information organised into four main categories — table eggs, brown eggs, organic eggs, and free-range eggs — with product descriptions, packaging and delivery details, and quality assurance information.
+**Our Products (`products.html`):** Provides comprehensive product information organised into four main categories â€” table eggs, brown eggs, organic eggs, and free-range eggs â€” with product descriptions, packaging and delivery details, and quality assurance information.
 
 **Our Team (`team.html`):** Presents the farm as a family-oriented team built on values of care, respect, teamwork, and dedication, including team photographs, animal care and sustainability practices, and the farm's vision for the future.
 
@@ -92,17 +92,17 @@ The content strategy emphasises local relevance within the South African context
 
 ## Development Timeline
 
-### Phase 1: Foundation (Weeks 1 – 5)
+### Phase 1: Foundation (Weeks 1 â€“ 5)
 
-**Duration:** Weeks 1 – 5 of the semester
+**Duration:** Weeks 1 â€“ 5 of the semester
 
 The initial phase focuses on establishing the groundwork for the entire project. During the first week, thorough research into the farm's needs is conducted and the project proposal is submitted whilst setting up the GitHub repository. Week two involves detailed content planning, including finalising the sitemap design and creating wireframes for all pages. The third and fourth weeks concentrate on HTML development, building the structural foundation for all six pages using semantic HTML tags and implementing a functional navigation system. The final week of this phase involves comprehensive testing, HTML validation, and preparation for the Part 1 submission.
 
 **Part 1 Submission:** End of Week 5
 
-### Phase 2: Visual Design and Responsive Development (Weeks 6 – 9)
+### Phase 2: Visual Design and Responsive Development (Weeks 6 â€“ 9)
 
-**Duration:** Weeks 6 – 9 of the semester
+**Duration:** Weeks 6 â€“ 9 of the semester
 
 This phase focused on transforming the HTML foundation into a visually appealing and responsive website using CSS styling techniques.
 
@@ -131,8 +131,8 @@ This phase focused on transforming the HTML foundation into a visually appealing
 
 - Implemented media queries for multiple breakpoints:
   - Desktop: 1200px and above
-  - Tablet: 768px – 992px
-  - Mobile: 320px – 767px
+  - Tablet: 768px â€“ 992px
+  - Mobile: 320px â€“ 767px
   - Small mobile: 480px and below
 - Created responsive navigation menu that adapts on mobile devices
 - Optimised images for different screen sizes and resolutions
@@ -167,9 +167,9 @@ This phase focused on transforming the HTML foundation into a visually appealing
 - **Browser Support:** Modern browsers with graceful degradation
 - **Code Organisation:** Modular CSS structure with clear commenting
 
-### Phase 3: JavaScript Interactivity and Final Enhancements (Weeks 10 – 12)
+### Phase 3: JavaScript Interactivity and Final Enhancements (Weeks 10 â€“ 12)
 
-**Duration:** Weeks 10 – 12 of the semester
+**Duration:** Weeks 10 â€“ 12 of the semester
 
 This final phase implements JavaScript functionality, interactive features, SEO improvements, accessibility enhancements, and deployment-ready support files to create a more complete and user-friendly website experience.
 
@@ -209,11 +209,11 @@ This final phase implements JavaScript functionality, interactive features, SEO 
 
 ```
 Home (index.html)
-├── About Us (about.html)
-├── Our Products (products.html)
-├── Our Team (team.html)
-├── Egg Fun Facts (eggfunfacts.html)
-└── Contact Us (contact.html)
+â”œâ”€â”€ About Us (about.html)
+â”œâ”€â”€ Our Products (products.html)
+â”œâ”€â”€ Our Team (team.html)
+â”œâ”€â”€ Egg Fun Facts (eggfunfacts.html)
+â””â”€â”€ Contact Us (contact.html)
 ```
 
 ## Changelog
@@ -243,7 +243,7 @@ These screenshots show how the site responds on common devices after iterative t
 
 ### Mobile
 
-Screenshots of the website displayed on mobile devices (320px – 767px viewport width). Testing confirms single-column layout, stacked navigation, and properly wrapped contact information.
+Screenshots of the website displayed on mobile devices (320px â€“ 767px viewport width). Testing confirms single-column layout, stacked navigation, and properly wrapped contact information.
 
 ![Mobile responsiveness test 1](images/Mobile-1.png)
 
@@ -251,7 +251,7 @@ Screenshots of the website displayed on mobile devices (320px – 767px viewport
 
 ### Tablet
 
-Screenshots of the website displayed on tablet devices (768px – 992px viewport width). Testing confirms two-column grid layouts and adjusted typography scales.
+Screenshots of the website displayed on tablet devices (768px â€“ 992px viewport width). Testing confirms two-column grid layouts and adjusted typography scales.
 
 ![Tablet responsiveness test 1](images/Tablet-1.png)
 
