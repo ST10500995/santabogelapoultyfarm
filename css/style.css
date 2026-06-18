@@ -286,10 +286,16 @@ nav ul li a:active {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .product-card h3 {
     color: #53571d;
     margin: 0.9375rem 0;
     font-size: 1.25rem;
+=======
+.product-card h3{
+    color: #53571d;
+    margin: 15px 0;
+>>>>>>> d945025326b0072b15b71630c991a7942e1854ef
 }
 
 .product-card p {
