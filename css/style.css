@@ -301,6 +301,12 @@ nav ul li a:active {
 }
 
 /* Forms */
+.enquiry-card {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .enquiry-form {
     display: grid;
     gap: 1rem;
@@ -331,6 +337,10 @@ nav ul li a:active {
 
 .form-row textarea {
     resize: vertical;
+}
+
+.enquiry-form .btn {
+    justify-self: start;
 }
 
 .form-row input:focus,
@@ -391,9 +401,16 @@ nav ul li a:active {
 }
 
 /* Map */
+.map-card {
+    max-width: 54rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .map-embed {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    max-height: 22rem;
+    aspect-ratio: 16 / 7;
     border-radius: 0.625rem;
     overflow: hidden;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
@@ -808,6 +825,11 @@ footer a:focus {
     .gallery-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .map-embed {
+        max-height: none;
+        aspect-ratio: 4 / 3;
     }
 
     .logo h1 {
